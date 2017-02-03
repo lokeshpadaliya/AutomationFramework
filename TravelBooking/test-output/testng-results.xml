@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="45164" started-at="2017-02-03T18:13:31Z" finished-at="2017-02-03T18:14:16Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="45164" started-at="2017-02-03T18:13:31Z" finished-at="2017-02-03T18:14:16Z">
+      <class name="TravelBookingTest.TravelBooking.ExecutionScript">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TravelBookingTest.TravelBooking.ExecutionScript@6d4b1c02]" name="setup" is-config="true" duration-ms="10747" started-at="2017-02-03T23:43:31Z" finished-at="2017-02-03T23:43:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="executor()[pri:0, instance:TravelBookingTest.TravelBooking.ExecutionScript@6d4b1c02]" name="executor" duration-ms="31967" started-at="2017-02-03T23:43:42Z" finished-at="2017-02-03T23:44:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executor -->
+        <test-method status="PASS" signature="cleanup()[pri:0, instance:TravelBookingTest.TravelBooking.ExecutionScript@6d4b1c02]" name="cleanup" is-config="true" duration-ms="2382" started-at="2017-02-03T23:44:14Z" finished-at="2017-02-03T23:44:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+      </class> <!-- TravelBookingTest.TravelBooking.ExecutionScript -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
