@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="TravelBookingTest.TravelBooking.ExecutionScript">
+      <class name="travelBookingOperations.ExecutionScript">
         <methods>
           <include name="cleanup"/>
           <include name="executor"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- TravelBookingTest.TravelBooking.ExecutionScript -->
+      </class> <!-- travelBookingOperations.ExecutionScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -7,7 +7,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
-import TravelBookingTest.TravelBooking.ExecutionScript;
+import travelBookingOperations.ExecutionScript;
 
 public class Screenshot {
 	
@@ -18,9 +18,7 @@ public class Screenshot {
 		String Object= Obj;
 		File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		try {
-		 // now copy the  screenshot to desired location using copyFile //method
-			System.out.println( System.currentTimeMillis()+" I'm in try of screenshot");
-		FileUtils.copyFile(src, new File("D:/Selenium/WorkSpace/TravelBooking/"+ Object+"_" + System.currentTimeMillis() + ".jpg"));
+		FileUtils.copyFile(src, new File(System.getProperty("user.dir")+"//Screenshot//"+ Object+"_" + System.currentTimeMillis() + ".jpg"));
 		}
 		 
 		catch (IOException e)
