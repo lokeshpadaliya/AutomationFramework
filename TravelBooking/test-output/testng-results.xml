@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="39341" started-at="2017-02-07T11:38:34Z" finished-at="2017-02-07T11:39:13Z">
+  <suite name="TravelBooking" duration-ms="51358" started-at="2017-02-08T16:16:20Z" finished-at="2017-02-08T16:17:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="39341" started-at="2017-02-07T11:38:34Z" finished-at="2017-02-07T11:39:13Z">
+    <test name="TravelBooking" duration-ms="51358" started-at="2017-02-08T16:16:20Z" finished-at="2017-02-08T16:17:11Z">
       <class name="travelBookingOperations.ExecutionScript">
-        <test-method status="PASS" signature="setup()[pri:0, instance:travelBookingOperations.ExecutionScript@544fe44c]" name="setup" is-config="true" duration-ms="6962" started-at="2017-02-07T17:08:34Z" finished-at="2017-02-07T17:08:41Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:travelBookingOperations.ExecutionScript@544fe44c]" name="setup" is-config="true" duration-ms="8032" started-at="2017-02-08T21:46:20Z" finished-at="2017-02-08T21:46:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="executor()[pri:0, instance:travelBookingOperations.ExecutionScript@544fe44c]" name="executor" duration-ms="30843" started-at="2017-02-07T17:08:41Z" finished-at="2017-02-07T17:09:12Z">
+        <test-method status="PASS" signature="executor()[pri:0, instance:travelBookingOperations.ExecutionScript@544fe44c]" name="executor" duration-ms="39733" started-at="2017-02-08T21:46:28Z" finished-at="2017-02-08T21:47:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executor -->
-        <test-method status="PASS" signature="cleanup()[pri:0, instance:travelBookingOperations.ExecutionScript@544fe44c]" name="cleanup" is-config="true" duration-ms="1474" started-at="2017-02-07T17:09:12Z" finished-at="2017-02-07T17:09:13Z">
+        <test-method status="PASS" signature="cleanup()[pri:0, instance:travelBookingOperations.ExecutionScript@544fe44c]" name="cleanup" is-config="true" duration-ms="3502" started-at="2017-02-08T21:47:08Z" finished-at="2017-02-08T21:47:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanup -->
       </class> <!-- travelBookingOperations.ExecutionScript -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- TravelBooking -->
+  </suite> <!-- TravelBooking -->
 </testng-results>

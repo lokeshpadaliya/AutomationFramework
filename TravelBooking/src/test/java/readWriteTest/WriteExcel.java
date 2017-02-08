@@ -3,6 +3,7 @@ package readWriteTest;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.util.*;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -30,18 +31,18 @@ import org.apache.poi.ss.usermodel.IndexedColors;
 		    	    	wb = new XSSFWorkbook(inputStream);
 		    	    }
 		    	  
-		    	    else if(fileExtensionName.equals(".xls")){
-		    	       
+		    	    else if(fileExtensionName.equals(".xls")){   	       
 		    	    	wb = new HSSFWorkbook(inputStream);
-		    	    }
-	                  
+		    	    }  
 	                Sheet worksheet = wb.getSheet(sheetName);
 	                   
-	                Cell cell = null;
+	                Cell cell2, cell3= null;
 	                
-	                cell = worksheet.getRow(row).getCell(2); 
-	                  
-	                cell.setCellValue(result);
+	                cell2 = worksheet.getRow(row).getCell(2); 
+	                cell3 = worksheet.getRow(row).getCell(3);
+	                Date d=new Date();
+	                cell2.setCellValue(result);
+	                cell3.setCellValue(d.toString());
 	                
 		                if(result.equalsIgnoreCase("PASS"))
 		                {

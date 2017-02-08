@@ -45,7 +45,7 @@ public class ExecutionScript {
 			Row suitRow=mySuit.getRow(i);
 			if(suitRow.getCell(1).toString().equalsIgnoreCase("Y") || suitRow.getCell(1).toString().equalsIgnoreCase("YES"))
 			{
-			System.out.println(i+" is selected as "+suitRow.getCell(1).toString() );
+			System.out.println(i+">"+suitRow.getCell(0).toString()+" is selected as "+suitRow.getCell(1).toString() );
 			String testName= suitRow.getCell(0).toString();
 			Sheet mySheet = rex.readExcel(System.getProperty("user.dir"),"TestCase.xlsx" , "KeywordFramework");
 		    int rowCount = mySheet.getLastRowNum();
