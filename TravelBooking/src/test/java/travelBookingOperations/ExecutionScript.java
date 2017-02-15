@@ -13,6 +13,7 @@ import org.testng.annotations.Test;
 
 import readWriteTest.ReadExcel;
 import readWriteTest.WriteExcel;
+import utility.Report;
 
 
 public class ExecutionScript {
@@ -35,6 +36,8 @@ public class ExecutionScript {
 		ReadExcel rex =new ReadExcel();
 		WriteExcel wex=new WriteExcel();
 		UiOps uo= new UiOps(driver);
+		Report rep=new Report();
+		rep.htmlWriter();
 		
 		Sheet mySuit = rex.readExcel(System.getProperty("user.dir"),"TestCase.xlsx" , "Suit");
 		
@@ -59,7 +62,7 @@ public class ExecutionScript {
 		        { 		        
 		        	 Row row1 = mySheet.getRow(k+1);
 		        if(row1.getCell(0).toString().length()==0){		        	    	
-		            uo.operations( row1.getCell(1).toString(), row1.getCell(2).toString(), row1.getCell(3).toString(), row1.getCell(4).toString(), row1.getCell(5).toString());
+		            uo.operations( row1.getCell(1).toString(), row1.getCell(2).toString(), row1.getCell(3).toString(), row1.getCell(4).toString(), row1.getCell(5).toString(), row1.getCell(6).toString());
 		            System.out.println("K= "+k);
 		        }
 		        else{
@@ -74,10 +77,12 @@ public class ExecutionScript {
 		        
 		        if(UiOps.Flag==1){
 	        		wex.writeExcel(System.getProperty("user.dir"),"TestCase.xlsx" , "Suit", i, "Fail");
+	        		rep.htmlResultWriter(i, row.getCell(0).toString(),"Fail" );
 	        	}
 		        else
 		        {
 		        	wex.writeExcel(System.getProperty("user.dir"),"TestCase.xlsx" , "Suit", i, "Pass");
+		        	rep.htmlResultWriter(i, row.getCell(0).toString(),"Pass" );
 		        }
 		     }
 		        else
@@ -89,8 +94,14 @@ public class ExecutionScript {
 			else
 			{
 				wex.writeExcel(System.getProperty("user.dir"),"TestCase.xlsx" , "Suit", i, "NotExecuted");
+				Row notExecuted=mySuit.getRow(i);
+				rep.htmlResultWriter(i, notExecuted.getCell(0).toString() ,"NotExecuted" );
 			}
+
 		} 
+		
+		System.out.println("End");
+		Report.WriteToFile(Report.htmlStringBuilder.toString(), "Results.html");
 	}
 	
 	@AfterTest 	

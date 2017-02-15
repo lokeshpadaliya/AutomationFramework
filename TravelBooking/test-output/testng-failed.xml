@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [TravelBooking]">
+  <test name="TravelBooking(failed)">
     <classes>
       <class name="travelBookingOperations.ExecutionScript">
         <methods>
@@ -11,5 +11,5 @@
         </methods>
       </class> <!-- travelBookingOperations.ExecutionScript -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- TravelBooking(failed) -->
+</suite> <!-- Failed suite [TravelBooking] -->

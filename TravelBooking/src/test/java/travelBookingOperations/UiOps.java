@@ -3,6 +3,7 @@ package travelBookingOperations;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 
 import utility.Screenshot;
 
@@ -19,7 +20,7 @@ public class UiOps {
 		this.driver= driver;
 	}
 	
-	public void operations(String Actions,String Obj, String ObjType, String Value, String ObjIdentifier) throws Exception
+	public void operations(String Actions,String Obj, String ObjType, String Value, String ObjIdentifier, String SecArg) throws Exception
 	{
 		
 		switch (Actions.toUpperCase()) 
@@ -36,7 +37,6 @@ public class UiOps {
         	else
         	{
     		Flag=1;
-    		Thread.sleep(5000);
     		ts.getscreenshot(Obj);
     		break;	
         	}
@@ -52,7 +52,6 @@ public class UiOps {
         	else
         	{
     		Flag=1;
-    		Thread.sleep(5000);
     		ts.getscreenshot(Obj);
     		break;
         	}
@@ -68,7 +67,6 @@ public class UiOps {
         	else
         	{
     		Flag=1;
-    		Thread.sleep(5000);
     		ts.getscreenshot(Obj);
     		break;
         	}
@@ -83,7 +81,6 @@ public class UiOps {
         	else
         	{
     		Flag=1;
-    		Thread.sleep(5000);
     		ts.getscreenshot(Obj);
     		break;
         	}   
@@ -95,6 +92,55 @@ public class UiOps {
         	Actions act = new Actions(driver);
        	 	act.moveToElement(driver.findElement(this.getObject(ObjIdentifier, ObjType))).click().build().perform();
        	 	Thread.sleep(2000);	
+       	 	break;
+        	}
+        	else
+        	{
+    		Flag=1;
+    		ts.getscreenshot(Obj);
+    		break;
+        	} 	 
+        	
+        case "SELECTDROPDOWN":
+        	System.out.println(driver.findElements(this.getObject(ObjIdentifier, ObjType)).size());
+        	if(driver.findElements(this.getObject(ObjIdentifier, ObjType)).size()!=0 && driver.findElement(this.getObject(ObjIdentifier, ObjType)).isDisplayed())
+        	{       		
+        	System.out.println("Inside SELECTDROPDOWN");
+        	Select dropdown = new Select(driver.findElement(this.getObject(ObjIdentifier, ObjType)));
+        	
+        	if (SecArg.equalsIgnoreCase("selectByIndex"))
+        	{
+        	dropdown.selectByIndex(Integer.valueOf(Value));
+        	Thread.sleep(2000);
+        	}
+        	else
+        	{
+    		Flag=1;
+    		ts.getscreenshot(Obj);
+    		break;
+        	} 
+        	if (SecArg.equalsIgnoreCase("selectByVisibleText"))
+        	{
+        	dropdown.selectByVisibleText(Value);
+        	Thread.sleep(2000);
+        	}
+        	else
+        	{
+    		Flag=1;
+    		ts.getscreenshot(Obj);
+    		break;
+        	} 
+        	if (SecArg.equalsIgnoreCase("selectByValue"))
+        	{
+        	dropdown.selectByValue(Value); 
+        	Thread.sleep(2000);
+        	}
+        	else
+        	{
+    		Flag=1;
+    		ts.getscreenshot(Obj);
+    		break;
+        	} 
         	}
         	else
         	{
@@ -102,7 +148,8 @@ public class UiOps {
     		Thread.sleep(5000);
     		ts.getscreenshot(Obj);
     		break;
-        	} 	 
+        	}        	
+        	
         default:
             break;
         }
