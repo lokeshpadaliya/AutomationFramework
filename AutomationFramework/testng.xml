@@ -2,7 +2,7 @@
 <suite name="AutomationFramework">
   <test name="AutomationFramework" >
     <classes>
-      <class name="travelBookingOperations.ExecutionScript"/>
+      <class name="frameworkOperations.ExecutionScript"/>
     </classes>
  </test>
 </suite>
