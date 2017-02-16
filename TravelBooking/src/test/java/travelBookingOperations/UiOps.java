@@ -12,7 +12,6 @@ public class UiOps {
 	WebDriver driver;
 	
 	public static int Flag;
-	
 	Screenshot ts=new Screenshot();
 	
 	public UiOps(WebDriver driver)

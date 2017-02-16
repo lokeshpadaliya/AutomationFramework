@@ -39,6 +39,11 @@ public class ExecutionScript {
 		Report rep=new Report();
 		rep.htmlWriter();
 		
+		int notexecuted;
+		int fail;
+		int pass;
+		pass=fail=notexecuted=0;
+		
 		Sheet mySuit = rex.readExcel(System.getProperty("user.dir"),"TestCase.xlsx" , "Suit");
 		
 		int suitRowCount= mySuit.getLastRowNum();
@@ -74,13 +79,14 @@ public class ExecutionScript {
 		            	 break;
 		            }
 		        }
-		        
 		        if(UiOps.Flag==1){
+		        	fail++;
 	        		wex.writeExcel(System.getProperty("user.dir"),"TestCase.xlsx" , "Suit", i, "Fail");
 	        		rep.htmlResultWriter(i, row.getCell(0).toString(),"Fail" );
 	        	}
 		        else
-		        {
+		        {	
+		        	pass++;
 		        	wex.writeExcel(System.getProperty("user.dir"),"TestCase.xlsx" , "Suit", i, "Pass");
 		        	rep.htmlResultWriter(i, row.getCell(0).toString(),"Pass" );
 		        }
@@ -92,7 +98,8 @@ public class ExecutionScript {
 			}
 			}
 			else
-			{
+			{	
+				notexecuted++;
 				wex.writeExcel(System.getProperty("user.dir"),"TestCase.xlsx" , "Suit", i, "NotExecuted");
 				Row notExecuted=mySuit.getRow(i);
 				rep.htmlResultWriter(i, notExecuted.getCell(0).toString() ,"NotExecuted" );
@@ -101,7 +108,8 @@ public class ExecutionScript {
 		} 
 		
 		System.out.println("End");
-		Report.WriteToFile(Report.htmlStringBuilder.toString(), "Results.html");
+		rep.htmlSummary(pass, fail, notexecuted);
+		Report.WriteToFile(Report.sb.toString(), "Results.html");
 	}
 	
 	@AfterTest 	
