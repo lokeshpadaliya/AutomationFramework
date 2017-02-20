@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="TravelBooking" duration-ms="34356" started-at="2017-02-16T16:31:37Z" finished-at="2017-02-16T16:32:11Z">
+  <suite name="AutomationFramework" duration-ms="151009" started-at="2017-02-20T17:51:34Z" finished-at="2017-02-20T17:54:05Z">
     <groups>
     </groups>
-    <test name="TravelBooking" duration-ms="34356" started-at="2017-02-16T16:31:37Z" finished-at="2017-02-16T16:32:11Z">
-      <class name="travelBookingOperations.ExecutionScript">
-        <test-method status="PASS" signature="setup()[pri:0, instance:travelBookingOperations.ExecutionScript@6e06451e]" name="setup" is-config="true" duration-ms="5920" started-at="2017-02-16T22:01:37Z" finished-at="2017-02-16T22:01:43Z">
+    <test name="AutomationFramework" duration-ms="151009" started-at="2017-02-20T17:51:34Z" finished-at="2017-02-20T17:54:05Z">
+      <class name="frameworkOperations.ExecutionScript">
+        <test-method status="PASS" signature="setup()[pri:0, instance:frameworkOperations.ExecutionScript@6e06451e]" name="setup" is-config="true" duration-ms="61893" started-at="2017-02-20T23:21:34Z" finished-at="2017-02-20T23:22:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="executor()[pri:0, instance:travelBookingOperations.ExecutionScript@6e06451e]" name="executor" duration-ms="26437" started-at="2017-02-16T22:01:43Z" finished-at="2017-02-16T22:02:09Z">
+        <test-method status="PASS" signature="executor()[pri:0, instance:frameworkOperations.ExecutionScript@6e06451e]" name="executor" duration-ms="74169" started-at="2017-02-20T23:22:36Z" finished-at="2017-02-20T23:23:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executor -->
-        <test-method status="PASS" signature="cleanup()[pri:0, instance:travelBookingOperations.ExecutionScript@6e06451e]" name="cleanup" is-config="true" duration-ms="1921" started-at="2017-02-16T22:02:09Z" finished-at="2017-02-16T22:02:11Z">
+        <test-method status="PASS" signature="cleanup()[pri:0, instance:frameworkOperations.ExecutionScript@6e06451e]" name="cleanup" is-config="true" duration-ms="14826" started-at="2017-02-20T23:23:50Z" finished-at="2017-02-20T23:24:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanup -->
-      </class> <!-- travelBookingOperations.ExecutionScript -->
-    </test> <!-- TravelBooking -->
-  </suite> <!-- TravelBooking -->
+      </class> <!-- frameworkOperations.ExecutionScript -->
+    </test> <!-- AutomationFramework -->
+  </suite> <!-- AutomationFramework -->
 </testng-results>

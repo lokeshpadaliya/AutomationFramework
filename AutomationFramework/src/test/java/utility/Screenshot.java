@@ -20,7 +20,6 @@ public class Screenshot {
 		try {
 		FileUtils.copyFile(src, new File(System.getProperty("user.dir")+"//Screenshot//"+ Object+"_" + System.currentTimeMillis() + ".jpg"));
 		}
-		 
 		catch (IOException e)
 		 {
 		  System.out.println(e.getMessage());
