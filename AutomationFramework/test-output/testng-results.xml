@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="AutomationFramework" duration-ms="151009" started-at="2017-02-20T17:51:34Z" finished-at="2017-02-20T17:54:05Z">
+  <suite name="AutomationFramework" duration-ms="40098" started-at="2017-02-20T18:45:25Z" finished-at="2017-02-20T18:46:06Z">
     <groups>
     </groups>
-    <test name="AutomationFramework" duration-ms="151009" started-at="2017-02-20T17:51:34Z" finished-at="2017-02-20T17:54:05Z">
+    <test name="AutomationFramework" duration-ms="40098" started-at="2017-02-20T18:45:25Z" finished-at="2017-02-20T18:46:06Z">
       <class name="frameworkOperations.ExecutionScript">
-        <test-method status="PASS" signature="setup()[pri:0, instance:frameworkOperations.ExecutionScript@6e06451e]" name="setup" is-config="true" duration-ms="61893" started-at="2017-02-20T23:21:34Z" finished-at="2017-02-20T23:22:36Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:frameworkOperations.ExecutionScript@6e06451e]" name="setup" is-config="true" duration-ms="13747" started-at="2017-02-21T00:15:25Z" finished-at="2017-02-21T00:15:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="executor()[pri:0, instance:frameworkOperations.ExecutionScript@6e06451e]" name="executor" duration-ms="74169" started-at="2017-02-20T23:22:36Z" finished-at="2017-02-20T23:23:50Z">
+        <test-method status="PASS" signature="executor()[pri:0, instance:frameworkOperations.ExecutionScript@6e06451e]" name="executor" duration-ms="23796" started-at="2017-02-21T00:15:39Z" finished-at="2017-02-21T00:16:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executor -->
-        <test-method status="PASS" signature="cleanup()[pri:0, instance:frameworkOperations.ExecutionScript@6e06451e]" name="cleanup" is-config="true" duration-ms="14826" started-at="2017-02-20T23:23:50Z" finished-at="2017-02-20T23:24:05Z">
+        <test-method status="PASS" signature="cleanup()[pri:0, instance:frameworkOperations.ExecutionScript@6e06451e]" name="cleanup" is-config="true" duration-ms="2475" started-at="2017-02-21T00:16:03Z" finished-at="2017-02-21T00:16:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanup -->
