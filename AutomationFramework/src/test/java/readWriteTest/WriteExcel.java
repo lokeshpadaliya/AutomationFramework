@@ -73,8 +73,9 @@ import org.apache.poi.ss.usermodel.IndexedColors;
 	                FileOutputStream output_file =new FileOutputStream(new File(System.getProperty("user.dir") + "\\TestCase.xlsx")); 
 	                  
 	                wb.write(output_file);
-	                wb.close();
 	                output_file.close(); 
+	                wb.close();
+	                
    
 		        }
 		}
