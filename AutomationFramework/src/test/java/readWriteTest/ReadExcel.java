@@ -17,7 +17,6 @@ public class ReadExcel {
 	    
 	    FileInputStream inputStream = new FileInputStream(file);
 	    Workbook wb = null;
-	    
 	    String fileExtensionName = fileName.substring(fileName.indexOf("."));
 	    
 	    if(fileExtensionName.equals(".xlsx")){
