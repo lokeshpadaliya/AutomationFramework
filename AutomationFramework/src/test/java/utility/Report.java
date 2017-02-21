@@ -4,11 +4,9 @@ import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-
 public class Report {
 
 	public static StringBuilder sb;
-	
 	public void htmlWriter()
 	{	
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
