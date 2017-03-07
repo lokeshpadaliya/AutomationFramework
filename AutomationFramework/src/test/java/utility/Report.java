@@ -53,6 +53,5 @@ public class Report {
         writer.write(fileContent);
         writer.close();
         EmailReport.sendEmail();
-
     }
 }
