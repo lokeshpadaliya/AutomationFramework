@@ -52,6 +52,7 @@ public class Report {
         Writer writer=new OutputStreamWriter(outputStream);
         writer.write(fileContent);
         writer.close();
+        EmailReport.sendEmail();
 
     }
 }
